@@ -12,4 +12,7 @@ timeago(1);  =>  "44 years ago"
 // takes twitter's created_at date format, in your timezone
 timeago('Sun Jun 28 19:44:05 +0000 2013'); => "2 days ago"
 
+// and UTC
+timeago('1997-07-16T19:20+01:00'); => "16 years ago"
+
 ````
