@@ -1,6 +1,6 @@
 module.exports = function(){
     
-    global._timeago(nd){
+    global._timeago = function(nd){
         var second = 1000, minute = second*60, hour = minute*60, day = hour*24, week = day*7, month = day*30, 
         year = month*12, r = Math.round, pl = function(v, n){ return n + ' ' + v + (n>1 ? 's':'') + ' ago'};
         var ts = new Date().getTime() - new Date(nd).getTime();

@@ -1,0 +1,21 @@
+{
+  "name": "time-ago",
+  "description": "",
+  "url": "http://github.com/dpweb/time-ago",
+  "keywords": [
+    "util",
+    "nodejs"
+  ],
+  "author": {
+    "name": "C Borkert",
+    "email": "ILIKECHEESE@dpsw.info"
+  },
+  "main": "time-ago.js",
+  "dependencies": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/dpweb/time-ago.git"
+  },
+  "version": "0.0.1"
+}
