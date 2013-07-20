@@ -10,12 +10,12 @@
     "name": "C Borkert",
     "email": "ILIKECHEESE@dpsw.info"
   },
-  "main": "time-ago.js",
+  "main": "timeago.js",
   "dependencies": {
   },
   "repository": {
     "type": "git",
     "url": "git://github.com/dpweb/time-ago.git"
   },
-  "version": "0.0.3"
+  "version": "0.0.4"
 }
