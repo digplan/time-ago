@@ -17,5 +17,8 @@ _timeago('1997-07-16T19:20+01:00'); => "16 years ago"
 
 ````
 
-Simple _today() function shows Day, Month, Date, Yr    
- ==> 'Monday, June 1, 1970'
+_today() function shows Day, Month, Date, Yr    
+ ==> 'Monday, June 1, 1970'    
+    
+_timefriendly('1 hour')  // convert to ms: seconds, minutes, hours, days, weeks, months, years 
+ ==> 3600000
