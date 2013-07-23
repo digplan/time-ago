@@ -7,7 +7,7 @@ module.exports = function(){
        	var r = Math.round, pl = function(v, n){ return n + ' ' + v + (n>1 ? 's':'') + ' ago'},
        		ts = new Date().getTime() - new Date(nd).getTime(), ii;
     	for(i in o){
-    		if(r(ts) <= o[i]) return pl(ii||'m', r(ts/(o[ii]||1)))
+    		if(r(ts) < o[i]) return pl(ii||'m', r(ts/(o[ii]||1)))
     		ii = i;
     	}
     	return pl(i, r(ts/o[i]));
