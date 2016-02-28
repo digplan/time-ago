@@ -1,3 +1,5 @@
+"use strict";
+
 var timeago = function() {
 
   var o = {
@@ -18,7 +20,7 @@ var timeago = function() {
       },
       ts = new Date().getTime() - new Date(nd).getTime(),
       ii;
-    for (i in o) {
+    for (var i in o) {
       if (r(ts) < o[i]) return pl(ii || 'm', r(ts / (o[ii] || 1)))
       ii = i;
     }

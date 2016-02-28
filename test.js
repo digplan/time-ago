@@ -1,3 +1,5 @@
+"use strict";
+
 var ta = (typeof module !== 'undefined' && module.exports) ?
   require('./timeago.js')() : timeago();
 
