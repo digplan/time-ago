@@ -13,10 +13,10 @@ var timeago = function() {
   };
   var obj = {};
 
-  obj.ago = function(nd) {
+  obj.ago = function(nd, s) {
     var r = Math.round,
       pl = function(v, n) {
-        return n + ' ' + v + (n > 1 ? 's' : '') + ' ago'
+        return (s === undefined) ? n + ' ' + v + (n > 1 ? 's' : '') + ' ago' : n + v.substring(0, 1)
       },
       ts = new Date().getTime() - new Date(nd).getTime(),
       ii;
