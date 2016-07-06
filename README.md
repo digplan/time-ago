@@ -8,7 +8,7 @@ var ta = require('./time-ago.js')();  // node.js
 var ta = timeago();					// browser
 ````
 
-###ta.ago(...)
+###ta.ago(..., [short])
 ````
 ta.ago(new Date()-1000);  =>  "1 second ago"
 ta.ago(new Date()-2000);  =>  "2 seconds ago"
@@ -21,6 +21,11 @@ ta.ago('Sun Jun 28 19:44:05 +0000 2013'); => "2 days ago"
 // and UTC
 ta.ago('1997-07-16T19:20+01:00'); => "16 years ago"
 
+// with optional short parameter
+ta.ago(new Date()-1000, true);  =>  "1s"
+ta.ago(new Date()-1000 * 60, true); => "1m"
+ta.ago(new Date()-1000 * 60 * 60, true); => "1h"
+
 ````
 ###ta.today()
 ````
@@ -30,10 +35,10 @@ ta.today() function shows Day, Month, Date, Yr
 
 ###ta.timefriendly('x period')
 ````
-ta.timefriendly('1 hour')  // convert to ms: seconds, minutes, hours, days, weeks, months, years 
+ta.timefriendly('1 hour')  // convert to ms: seconds, minutes, hours, days, weeks, months, years
  ==> 3600000
 
- ta.timefriendly('1 hour')  // convert to ms: seconds, minutes, hours, days, weeks, months, years 
+ ta.timefriendly('1 hour')  // convert to ms: seconds, minutes, hours, days, weeks, months, years
  ==> 3600000
 ````
 
