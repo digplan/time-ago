@@ -18,7 +18,7 @@ var timeago = function() {
       pl = function(v, n) {
         return (s === undefined) ? n + ' ' + v + (n > 1 ? 's' : '') + ' ago' : n + v.substring(0, 1)
       },
-      ts = new Date().getTime() - new Date(nd).getTime(),
+      ts = Date.now() - new Date(nd).getTime(),
       ii;
     for (var i in o) {
       if (r(ts) < o[i]) return pl(ii || 'm', r(ts / (o[ii] || 1)))
