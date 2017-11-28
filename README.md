@@ -4,8 +4,8 @@ timeago
 Simple timeago function takes same params as 'new Date(...)'
 
 ````
-var ta = require('./time-ago.js')();  // node.js
-var ta = timeago();					// browser
+var ta = require('./time-ago.js')  // node.js
+var ta = timeago();	          // browser
 ````
 
 ###ta.ago(..., [short])

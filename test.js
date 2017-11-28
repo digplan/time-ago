@@ -1,8 +1,4 @@
-"use strict";
-
-var ta = (typeof module !== 'undefined' && module.exports) ?
-  require('./timeago.js')() : timeago();
-
+var ta = require('./timeago.js')
 
 console.log(
   ta.ago(new Date() - 1000), ta.ago(new Date() - 1000) === '1 second ago',
