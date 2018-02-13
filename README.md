@@ -8,7 +8,7 @@ var ta = require('./time-ago.js')  // node.js
 var ta = timeago();	          // browser
 ````
 
-###ta.ago(..., [short])
+### ta.ago(..., [short])
 ````
 ta.ago(new Date()-1000);  =>  "1 second ago"
 ta.ago(new Date()-2000);  =>  "2 seconds ago"
@@ -27,13 +27,13 @@ ta.ago(new Date()-1000 * 60, true); => "1m"
 ta.ago(new Date()-1000 * 60 * 60, true); => "1h"
 
 ````
-###ta.today()
+### ta.today()
 ````
 ta.today() function shows Day, Month, Date, Yr    
  ==> 'Monday, June 1, 1970'    
 ````
 
-###ta.timefriendly('x period')
+### ta.timefriendly('x period')
 ````
 ta.timefriendly('1 hour')  // convert to ms: seconds, minutes, hours, days, weeks, months, years
  ==> 3600000
@@ -42,8 +42,10 @@ ta.timefriendly('1 hour')  // convert to ms: seconds, minutes, hours, days, week
  ==> 3600000
 ````
 
-###ta.mintoread(text, [altcmt, wpm])
+### ta.mintoread(text, [altcmt, wpm])
+
 Cool Medium like 'x min to read' feature
+
 ````
 ta.mintoread('six hundred words of text')  // calculate based on 200 wpm reading speed
  ==> "3 min to read"
